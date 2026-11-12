@@ -2,7 +2,7 @@ manifestVersion: 1
 id: haushalt-einkaufsliste
 category: files
 name: Einkaufsliste
-version: "0.1.4"
+version: "0.1.5"
 tagline: Die gemeinsame Einkaufsliste für euren Haushalt
 description: >-
   Eine Einkaufsliste für einen Haushalt: Artikel als Kacheln antippen, im Geschäft abhaken,
@@ -28,14 +28,14 @@ releaseNotes: >-
   Neu in dieser Version:
 
 
-  - Die Liste bewegt sich ruhiger: Wird eine Kategorie leer, rutscht der Rest nach, statt zu springen.
+  - Am Computer steht jetzt alles in einer Zeile: Listenname, Suche, Synchronisierung und Einstellungen. Die Zeile bleibt beim Scrollen oben.
 
-  - Beim Wechsel zwischen „Alle“ und einem Markt blinken nicht mehr alle Artikel auf.
+  - Die Suche ersetzt die Liste an Ort und Stelle. Enter fügt den ersten Treffer hinzu, Escape bringt die Liste zurück.
 
-  - Listen lassen sich flüssiger umsortieren: Die Zeile folgt dem Finger.
+  - „Symbol ändern“ ist am Computer breiter und zeigt acht Symbole pro Zeile.
 
-  - Ansichten, Rückfragen und Fotos blenden weich ein.
+  - Mengen, Märkte und „Zuletzt verwendet“ brechen am Computer um, statt seitlich zu scrollen.
 
-  - Der Hinweis „Speichern fehlgeschlagen“ lässt sich schließen.
+  - Escape schließt „Symbol ändern“ jetzt zuverlässig.
 submitter: Privat
 submission: https://github.com/hochschule-jz/umbrel-haushalt-store
