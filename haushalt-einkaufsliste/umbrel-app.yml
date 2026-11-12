@@ -2,7 +2,7 @@ manifestVersion: 1
 id: haushalt-einkaufsliste
 category: files
 name: Einkaufsliste
-version: "0.1.5"
+version: "0.1.6"
 tagline: Die gemeinsame Einkaufsliste für euren Haushalt
 description: >-
   Eine Einkaufsliste für einen Haushalt: Artikel als Kacheln antippen, im Geschäft abhaken,
@@ -28,14 +28,10 @@ releaseNotes: >-
   Neu in dieser Version:
 
 
-  - Am Computer steht jetzt alles in einer Zeile: Listenname, Suche, Synchronisierung und Einstellungen. Die Zeile bleibt beim Scrollen oben.
+  - Die App holt sich neue Versionen von selbst: Beim Öffnen sucht sie danach und lädt einmal neu.
 
-  - Die Suche ersetzt die Liste an Ort und Stelle. Enter fügt den ersten Treffer hinzu, Escape bringt die Liste zurück.
+  - Über eine https-Adresse startet die App auch ohne Verbindung, mit den Listen, wie sie zuletzt waren. Wie das eingerichtet wird, steht im README des App Stores.
 
-  - „Symbol ändern“ ist am Computer breiter und zeigt acht Symbole pro Zeile.
-
-  - Mengen, Märkte und „Zuletzt verwendet“ brechen am Computer um, statt seitlich zu scrollen.
-
-  - Escape schließt „Symbol ändern“ jetzt zuverlässig.
+  - Der Hinweis zum Home-Bildschirm erscheint nur noch dort, wo die App ohne Internet funktionieren kann.
 submitter: Privat
 submission: https://github.com/hochschule-jz/umbrel-haushalt-store

@@ -28,6 +28,40 @@ the image and this folder.
 Raise `version` in `server/package.json` and `web/package.json`, run `release.sh` again, write what is
 new into `releaseNotes` in `umbrel-app.yml`, and push this folder. umbrelOS then offers the update.
 
+## Using it without a connection (https)
+
+Over `http://umbrel.local:8642` the app needs the server for every start. To open it in the shop without
+a connection, it has to be installed from an https address; with Tailscale on the Umbrel that is Tailscale Serve:
+
+1. In the Tailscale admin console, on the DNS page, turn on MagicDNS and „HTTPS Certificates“. This puts the
+   Umbrel's machine name and the tailnet name into a public certificate log; access stays limited to your devices.
+2. On the Umbrel over SSH, find the Tailscale container and turn on Serve for the app:
+
+   ```bash
+   sudo docker ps --format '{{.Names}}' | grep -i tailscale
+   ```
+
+   ```bash
+   sudo docker exec tailscale_web_1 tailscale serve --bg --https=8443 http://localhost:8642
+   ```
+
+   ```bash
+   sudo docker exec tailscale_web_1 tailscale serve status
+   ```
+
+   The last command shows the address, like `https://umbrel.tail1234.ts.net:8443`.
+3. On each iPhone, with Tailscale on: open that address in Safari, sign in, add it to the Home Screen and delete
+   the old icon. Replace the address in the Siri shortcut (Einstellungen shows the new one).
+4. Check: open the app from the new icon, switch to flight mode, close the app and open it again. The lists
+   appear with the „Offline“ row; changes are sent once the Umbrel is in reach again.
+
+The https address only answers while Tailscale is on, at home too. With Tailscale off the app works from
+its copy on the phone and sends the changes later. Updates arrive by themselves: the app fetches a new
+version when it is opened and reloads once.
+
+To undo: `sudo docker exec tailscale_web_1 tailscale serve --https=8443 off`. If the address stops answering
+after an update of Umbrel's Tailscale app, run the `serve` command again.
+
 ## Notes
 
 - Data (database and photos) lives in the app's data folder on the Umbrel and survives updates.
