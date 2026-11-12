@@ -2,7 +2,7 @@ manifestVersion: 1
 id: haushalt-einkaufsliste
 category: files
 name: Einkaufsliste
-version: "0.1.2"
+version: "0.1.3"
 tagline: Die gemeinsame Einkaufsliste für euren Haushalt
 description: >-
   Eine Einkaufsliste für einen Haushalt: Artikel als Kacheln antippen, im Geschäft abhaken,
@@ -28,16 +28,9 @@ releaseNotes: >-
   Neu in dieser Version:
 
 
-  - Märkte: In den Artikeldetails wählst du, wo du etwas kaufst. Die Liste zeigt dann, was du wo bekommst,
-  und mit „Ich bin gerade bei …“ nur das, was es im aktuellen Markt gibt.
+  - Die Artikeldetails passen wieder auf den Bildschirm: „Erledigt“ ist ohne Scrollen sichtbar,
+  und das Blatt lässt sich nicht mehr seitlich verschieben.
 
-  - Hinzufügen geht schneller: Nach dem Antippen stellst du Menge und Markt ein, „Fertig“ bringt dich zur Liste,
-  „Weiteren Artikel hinzufügen“ zurück zur Suche.
-
-  - Beim Scrollen verschwindet die Kopfzeile; oben bleibt eine schmale Leiste mit dem Listennamen.
-
-  - Deine Farbe ist besser sichtbar und in den Einstellungen erklärt.
-
-  - Änderungen von anderen Geräten gehen beim Öffnen der App nicht mehr verloren.
+  - In den Artikeldetails stehen die Märkte in einer Zeile, die meistgenutzten zuerst.
 submitter: Privat
 submission: https://github.com/hochschule-jz/umbrel-haushalt-store
