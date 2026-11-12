@@ -2,7 +2,7 @@ manifestVersion: 1
 id: haushalt-einkaufsliste
 category: files
 name: Einkaufsliste
-version: "0.1.0"
+version: "0.1.1"
 tagline: Die gemeinsame Einkaufsliste für euren Haushalt
 description: >-
   Eine Einkaufsliste für einen Haushalt: Artikel als Kacheln antippen, im Geschäft abhaken,
@@ -24,6 +24,16 @@ gallery: []
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-releaseNotes: ""
+releaseNotes: >-
+  Neu in dieser Version:
+
+
+  - „Rückgängig“ bleibt jetzt fünf Sekunden sichtbar; bisher war es sofort wieder weg.
+
+  - Nach dem Hinzufügen öffnen sich gleich die Artikeldetails.
+
+  - Unter der Notiz stehen Mengen zum Antippen, passend zum Artikel.
+
+  - Ein Artikel lässt sich in den Artikeldetails in eine andere Liste verschieben.
 submitter: Privat
 submission: https://github.com/hochschule-jz/umbrel-haushalt-store
