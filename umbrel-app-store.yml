@@ -1,0 +1,3 @@
+# A community app store for umbrelOS with one app. Every app id starts with this id.
+id: "haushalt"
+name: "Haushalt" # shown in umbrelOS as "Haushalt App Store"

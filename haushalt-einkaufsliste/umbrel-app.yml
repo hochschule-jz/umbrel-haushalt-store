@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: haushalt-einkaufsliste
+category: files
+name: Einkaufsliste
+version: "0.1.0"
+tagline: Die gemeinsame Einkaufsliste für euren Haushalt
+description: >-
+  Eine Einkaufsliste für einen Haushalt: Artikel als Kacheln antippen, im Geschäft abhaken,
+  alle Listen werden geteilt und sofort auf allen Geräten aktualisiert.
+
+
+  Am iPhone über „Teilen“ zum Home-Bildschirm hinzufügen. Beim ersten Start legst du das erste
+  Konto an; weitere Mitglieder fügst du in den Einstellungen hinzu. Artikel lassen sich auch
+  per Siri-Kurzbefehl diktieren.
+developer: Privat
+website: https://github.com/hochschule-jz/umbrel-haushalt-store
+dependencies: []
+repo: https://github.com/hochschule-jz/umbrel-haushalt-store
+support: https://github.com/hochschule-jz/umbrel-haushalt-store/issues
+# The address is http://umbrel.local:8642 (or your Tailscale name). Change it if another app uses this port.
+port: 8642
+icon: https://raw.githubusercontent.com/hochschule-jz/umbrel-haushalt-store/main/haushalt-einkaufsliste/icon.png
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+releaseNotes: ""
+submitter: Privat
+submission: https://github.com/hochschule-jz/umbrel-haushalt-store

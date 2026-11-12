@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<service>_1 and the port the server listens on inside the container
+      APP_HOST: haushalt-einkaufsliste_web_1
+      APP_PORT: 8080
+      # The app has its own sign-in and is opened from phones and by the Siri shortcut,
+      # so Umbrel's own login is not put in front of it.
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    # Set by release.sh: the pushed image, pinned by digest.
+    image: ghcr.io/hochschule-jz/einkaufsliste:0.1.0@sha256:8500875488eac1d5ac72b7bc74d3a11b498bd1668292c6eed7188610fbe3dbcd
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      # database and photos
+      - ${APP_DATA_DIR}/data:/data
